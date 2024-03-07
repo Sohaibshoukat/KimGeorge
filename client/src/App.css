@@ -1,0 +1,413 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  overflow-x: hidden;
+}
+
+
+.textdec {
+  background: linear-gradient(to right, #024efe 0%, #1d9ef3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(183, 183, 183);
+}
+
+.navanimate {
+  animation: moveFromTop10ToTop1 2s forwards;
+}
+
+
+
+@keyframes moveFromTop10ToTop1 {
+  0% {
+    top: -10%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  height: 52px !important;
+}
+
+.ReactFlagsSelect-module_flagsSelect__2pfa2 {
+  padding-bottom: 0px !important;
+}
+
+.ReactFlagsSelect-module_flagsSelect__2pfa2 {
+  flex-basis: 105%;
+}
+
+
+
+
+.c-footer__waves-item {
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 200vw;
+  opacity: 0.9;
+  height: 200vw;
+  display: block;
+  margin-top: 15vw;
+  border-radius: 40%;
+  position: absolute;
+  margin-left: -100vw;
+  transform-origin: 50% 48%;
+  animation: 7000ms linear 0s infinite normal none running erEovC;
+  background: linear-gradient(103deg, rgb(15 1 34 / 24%), #002349);
+}
+
+.bgblur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.c-footer__waves-item.item-01 {
+  animation: 9000ms linear 0s infinite normal none running erEovC;
+}
+
+.c-footer__waves-item.item-02 {
+  opacity: 0.7;
+  margin-left: -115vw;
+  animation: 11000ms linear 0s infinite normal none running erEovC;
+  background: linear-gradient(103deg, #0c2f54, #002349);
+}
+
+.bgabout {
+  background-image: url('./assets/banner_cover.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100%;
+}
+
+.bgpartner {
+  background-image: url('./assets/test.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100%;
+}
+
+
+
+@keyframes erEovC {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.roundanimate {
+  animation: roundanimate2 2s ease infinite;
+}
+
+@keyframes roundanimate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+
+.zoomanimation {
+  animation: zoom-in 1s ease;
+}
+
+.bggradient {
+  background: transparent linear-gradient(262deg, #1D9EF3 0%, #024EFE 100%) 0% 0% no-repeat padding-box;
+  animation: float 2s ease infinite;
+}
+
+.floatanimation {
+  animation: float 2s ease infinite;
+}
+
+.floatanimation2 {
+  animation: float2 2s ease infinite;
+}
+
+.rotateanimat{
+  animation: roundanimate22 10s ease infinite;
+}
+
+@keyframes roundanimate22 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0, 0);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.floatdownanimation {
+  animation: flyDown 2s ease;
+}
+
+@keyframes flyDown {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floatdownanimation2 {
+  animation: flyDown2 1s ease forwards;
+}
+
+@keyframes flyDown2 {
+  0% {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;  
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1; 
+  }
+}
+
+.LeftMoveAnimation{
+  animation: LeftMove 2s ease forwards;
+}
+
+@keyframes LeftMove {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.RightMoveAnimation{
+  animation: RightMove 2s ease;
+}
+
+@keyframes RightMove {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.LeftMoveAnimation2{
+  animation: LeftMove2 2s ease;
+}
+
+@keyframes LeftMove2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(-20%);
+  }
+  60%{
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-8%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.RightMoveAnimation2{
+  animation: RightMove2 2s ease;
+}
+
+@keyframes RightMove2 {
+  0% {
+    transform: translateX(100%);
+  }
+  25%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(20%);
+  }
+  60%{
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(8%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
+@layer base {
+  body {
+    @apply leading-relaxed;
+  }
+
+  .page {
+    @apply w-full h-screen overflow-hidden;
+  }
+
+  .h1 {
+    @apply text-[35px] leading-tight md:text-[60px] md:leading-[1.3] mb-4 font-semibold;
+  }
+
+  .h2 {
+    @apply text-[35px] leading-tight md:text-[54px] md:leading-[1.3] mb-4 font-semibold;
+  }
+
+  p {
+    @apply leading-[1.8] font-light;
+  }
+
+  .btn,
+  .input {
+    @apply h-[52px];
+  }
+
+  .input {
+    @apply w-full h-[52px] rounded-lg pl-6;
+  }
+
+  .select {
+    @apply w-full h-[52px] rounded-lg;
+  }
+
+  .input,
+  .textarea,
+  .select {
+    @apply bg-white border-none outline-none text-black focus:shadow-xl border-2 border-white placeholder:text-black/60 placeholder:font-light ease-in-out duration-300;
+  }
+
+  .textarea {
+    @apply w-full h-[180px] p-6 rounded-lg resize-none;
+  }
+}
+
+
+
+.bgBanner{
+    background: url('https://kgalaw.justinskeete.com/images/bg-team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.PracticeBanner{
+  background: url('https://kgalaw.justinskeete.com/images/page-titles/practice-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.PracticeBanner{
+  background: url('https://kgalaw.justinskeete.com/images/page-titles/contact-us-title-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+.BottomTpoAnimation{
+    animation: MoveTop 2s ease;
+  }
+  
+  @keyframes RightMove {
+    0% {
+      transform: translateY(100%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
