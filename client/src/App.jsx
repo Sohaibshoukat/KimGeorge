@@ -10,6 +10,7 @@ import Footer from './Components/Footer'
 import Services from './Pages/Services'
 import ScrollToTop from './Components/scrolltop'
 import About from './Pages/About'
+import Lawyers from './Pages/Lawyers'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/services" element={<Services />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path='/Lawyer' element={<Lawyers/>}></Route>
         </Routes>
         <Footer/>
       </BrowserRouter>

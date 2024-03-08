@@ -28,7 +28,7 @@ const Nav = () => {
         },
         {
             Title: "About Us",
-            Link: "#",
+            Link: "/About",
         },
         {
             Title: "Services",
@@ -40,7 +40,7 @@ const Nav = () => {
         },
         {
             Title:"Our Lawyers",
-            Link:"#3"
+            Link:"/Lawyer"
         }
     ];
 
